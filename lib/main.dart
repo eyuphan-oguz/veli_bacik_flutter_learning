@@ -6,6 +6,8 @@ import 'package:veli_bacik_flutter_learning/101/scaffold_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/text_learn_view.dart';
 
 import '101/app_bar.dart';
+import '101/color_learn.dart';
+import '101/icon_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: AppBarView(),
+      home: ColorLearn(),
     );
   }
 }
