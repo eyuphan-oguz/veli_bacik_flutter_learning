@@ -17,7 +17,21 @@ class ContainerSizedBoxLearn extends StatelessWidget {
           ),
           SizedBox.shrink(),
           SizedBox(height: 100,),
-          SizedBox.square(child: Text("c"*500),)
+          SizedBox.square(child: Text("c"*500),dimension: 500,),
+          Container(
+            height: 150,
+            constraints: const BoxConstraints(maxWidth: 200),
+            child: Text("a"*200),
+            padding: EdgeInsets.all(10),
+            margin: EdgeInsets.all(50),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [Colors.white,Colors.blueAccent]),
+              color: Colors.green,
+              boxShadow: [BoxShadow(color: Colors.amber,offset: Offset(0.1,1))],
+              shape: BoxShape.circle,
+              border: Border.all(color: Colors.red,width: 2)
+            ),
+          )
         ],
       ),
     );
