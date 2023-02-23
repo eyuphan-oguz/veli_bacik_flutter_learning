@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:veli_bacik_flutter_learning/101/button_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/container_sized_box_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/scaffold_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/text_learn_view.dart';
+
+import '101/app_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +20,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData.dark(),
-      home: ButtonLearn(),
+      theme: ThemeData.dark().copyWith(
+        appBarTheme: AppBarTheme(
+          centerTitle: true,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+
+        )
+      ),
+      home: AppBarView(),
     );
   }
 }
