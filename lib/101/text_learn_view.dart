@@ -28,7 +28,8 @@ class TextLearnView extends StatelessWidget {
           style: Theme.of(context).textTheme.headline5?.copyWith(color: ProjectColor.welcomeColor),
         ),
 
-        Text(userName ?? "")
+        Text(userName ?? ""),
+
       ],
     )));
   }

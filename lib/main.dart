@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:veli_bacik_flutter_learning/101/container_sized_box_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/text_learn_view.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: TextLearnView(),
+      home: ContainerSizedBoxLearn(),
     );
   }
 }
