@@ -7,6 +7,7 @@ import 'package:veli_bacik_flutter_learning/101/stateless_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/text_learn_view.dart';
 
 import '101/app_bar.dart';
+import '101/card_learn.dart';
 import '101/color_learn.dart';
 import '101/icon_learn.dart';
 import '101/padding_learn.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(
+        cardTheme: CardTheme(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
         appBarTheme: AppBarTheme(
           centerTitle: true,
           systemOverlayStyle: SystemUiOverlayStyle.light,
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: PaddingLearn(),
+      home: CardLearn(),
     );
   }
 }
