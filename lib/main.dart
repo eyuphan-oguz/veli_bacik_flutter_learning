@@ -12,6 +12,7 @@ import '101/card_learn.dart';
 import '101/color_learn.dart';
 import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
+import '101/indicator_learn.dart';
 import '101/padding_learn.dart';
 import 'demos/note_demos_view.dart';
 
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(
+        progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.red),
         cardTheme: CardTheme(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
         appBarTheme: AppBarTheme(
           centerTitle: true,
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: CustomWidgetLearn(),
+      home: IndicatorLearn(),
     );
   }
 }
