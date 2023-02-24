@@ -12,6 +12,7 @@ import '101/card_learn.dart';
 import '101/color_learn.dart';
 import '101/icon_learn.dart';
 import '101/padding_learn.dart';
+import 'demos/note_demos_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: ImageLearn(),
+      home: NotDemos(),
     );
   }
 }
