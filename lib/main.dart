@@ -3,11 +3,13 @@ import 'package:flutter/services.dart';
 import 'package:veli_bacik_flutter_learning/101/button_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/container_sized_box_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/scaffold_learn.dart';
+import 'package:veli_bacik_flutter_learning/101/stateless_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/text_learn_view.dart';
 
 import '101/app_bar.dart';
 import '101/color_learn.dart';
 import '101/icon_learn.dart';
+import '101/padding_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: ColorLearn(),
+      home: PaddingLearn(),
     );
   }
 }
