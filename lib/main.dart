@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:veli_bacik_flutter_learning/101/button_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/container_sized_box_learn.dart';
+import 'package:veli_bacik_flutter_learning/101/image_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/scaffold_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/stateless_learn.dart';
 import 'package:veli_bacik_flutter_learning/101/text_learn_view.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: CardLearn(),
+      home: ImageLearn(),
     );
   }
 }
