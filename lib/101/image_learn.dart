@@ -9,6 +9,7 @@ class ImageLearn extends StatelessWidget {
       appBar: AppBar(),
       body: Column(
         children: [
+          Image.network("https://.....",errorBuilder: (context,error,stackTree)=>PngImage(path: ImageItems().appleBook),),
           SizedBox(
               height: 400,
               width: 300,
