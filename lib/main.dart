@@ -10,6 +10,7 @@ import 'package:veli_bacik_flutter_learning/101/text_learn_view.dart';
 import '101/app_bar.dart';
 import '101/card_learn.dart';
 import '101/color_learn.dart';
+import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
 import '101/padding_learn.dart';
 import 'demos/note_demos_view.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: NotDemos(),
+      home: CustomWidgetLearn(),
     );
   }
 }
