@@ -10,6 +10,7 @@ import 'package:veli_bacik_flutter_learning/101/text_learn_view.dart';
 import '101/app_bar.dart';
 import '101/card_learn.dart';
 import '101/color_learn.dart';
+import '101/column_row_learn.dart';
 import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
 import '101/indicator_learn.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: ListTileLearn(),
+      home: ColumnRowLearn(),
     );
   }
 }
