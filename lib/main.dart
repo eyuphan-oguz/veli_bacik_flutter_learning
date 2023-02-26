@@ -17,6 +17,7 @@ import '101/indicator_learn.dart';
 import '101/list_tile_learn.dart';
 import '101/padding_learn.dart';
 import '101/stack_learn.dart';
+import '101/statefull_learn.dart';
 import 'demos/note_demos_view.dart';
 import 'demos/stack_demo_view.dart';
 
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: StackDemoView(),
+      home: StatefullLearn(),
     );
   }
 }
