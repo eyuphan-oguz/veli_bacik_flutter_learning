@@ -12,14 +12,24 @@ class PageViewLearn extends StatefulWidget {
 }
 
 class _PageViewLearnState extends State<PageViewLearn> {
-  final _pageController=PageController(viewportFraction: 0.9);
+  final _pageController=PageController();
+  int _currentPageIndex=0;
+
+  void _updatePageIndex(int index){
+    setState(() {
+      _currentPageIndex=index;
+    });
+}
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: Row(
         children: [
-          Text("data"),
+          Padding(
+            padding: const EdgeInsets.only(left: 18.0),
+            child: Text(_currentPageIndex.toString()),
+          ),
           Spacer(),
           FloatingActionButton(
             onPressed: (){
@@ -38,8 +48,9 @@ class _PageViewLearnState extends State<PageViewLearn> {
       ),
       appBar: AppBar(),
       body: PageView(
-        padEnds: false,
+        padEnds: true,
         controller: _pageController,
+        onPageChanged: _updatePageIndex,
         children: [
           Container(color: Colors.red,),
           IconLearn(),
