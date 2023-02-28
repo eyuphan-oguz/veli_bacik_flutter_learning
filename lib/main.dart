@@ -19,6 +19,7 @@ import '101/padding_learn.dart';
 import '101/page_view_learn.dart';
 import '101/stack_learn.dart';
 import '101/statefull_learn.dart';
+import '101/statefull_life_cycle.dart';
 import 'demos/note_demos_view.dart';
 import 'demos/stack_demo_view.dart';
 
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: PageViewLearn(),
+      home: StatefullLifeCycle(message: "Eyuphan Oguzz"),
     );
   }
 }
