@@ -21,6 +21,8 @@ import '101/stack_learn.dart';
 import '101/statefull_learn.dart';
 import '101/statefull_life_cycle.dart';
 import '101/text_field_learn.dart';
+import 'demos/color_demos_view.dart';
+import 'demos/color_life_cycle_view.dart';
 import 'demos/note_demos_view.dart';
 import 'demos/stack_demo_view.dart';
 
@@ -56,7 +58,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: TextFieldLearn(),
+      home: ColorLifeCycleView(),
     );
   }
 }
