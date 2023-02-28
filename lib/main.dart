@@ -20,6 +20,7 @@ import '101/page_view_learn.dart';
 import '101/stack_learn.dart';
 import '101/statefull_learn.dart';
 import '101/statefull_life_cycle.dart';
+import '101/text_field_learn.dart';
 import 'demos/note_demos_view.dart';
 import 'demos/stack_demo_view.dart';
 
@@ -37,6 +38,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(
+        textTheme: TextTheme(subtitle1: TextStyle(color: Colors.red)),
+        inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+          fillColor: Colors.white,
+          iconColor: Colors.red,
+          border: OutlineInputBorder(),
+          floatingLabelStyle: TextStyle(color: Colors.red,fontSize: 24,fontWeight: FontWeight.w600)
+        ),
         progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.red),
         cardTheme: CardTheme(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
         appBarTheme: AppBarTheme(
@@ -47,7 +56,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: StatefullLifeCycle(message: "Eyuphan Oguzz"),
+      home: TextFieldLearn(),
     );
   }
 }
