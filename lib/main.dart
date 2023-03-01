@@ -17,12 +17,14 @@ import '101/indicator_learn.dart';
 import '101/list_tile_learn.dart';
 import '101/list_view_builder_learn.dart';
 import '101/list_view_learn.dart';
+import '101/navigation_learn.dart';
 import '101/padding_learn.dart';
 import '101/page_view_learn.dart';
 import '101/stack_learn.dart';
 import '101/statefull_learn.dart';
 import '101/statefull_life_cycle.dart';
 import '101/text_field_learn.dart';
+import '202/tab_learn.dart';
 import 'demos/color_demos_view.dart';
 import 'demos/color_life_cycle_view.dart';
 import 'demos/my_collection_demos.dart';
@@ -43,6 +45,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(
+        bottomAppBarTheme: BottomAppBarTheme(
+          shape: CircularNotchedRectangle()
+        ),
+        tabBarTheme: TabBarTheme(
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.red,
+            indicatorSize: TabBarIndicatorSize.label
+        ),
         textTheme: TextTheme(subtitle1: TextStyle(color: Colors.red)),
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
@@ -61,8 +71,10 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: MyCollectionsDemos(),
+      home: TabLearn(),
     );
   }
 }
+
+
 
