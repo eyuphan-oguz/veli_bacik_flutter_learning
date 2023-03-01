@@ -15,6 +15,8 @@ import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
 import '101/indicator_learn.dart';
 import '101/list_tile_learn.dart';
+import '101/list_view_builder_learn.dart';
+import '101/list_view_learn.dart';
 import '101/padding_learn.dart';
 import '101/page_view_learn.dart';
 import '101/stack_learn.dart';
@@ -23,6 +25,7 @@ import '101/statefull_life_cycle.dart';
 import '101/text_field_learn.dart';
 import 'demos/color_demos_view.dart';
 import 'demos/color_life_cycle_view.dart';
+import 'demos/my_collection_demos.dart';
 import 'demos/note_demos_view.dart';
 import 'demos/stack_demo_view.dart';
 
@@ -58,7 +61,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: ColorLifeCycleView(),
+      home: MyCollectionsDemos(),
     );
   }
 }
