@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomWidgetLearn extends StatelessWidget with _ColorsUtility {
   CustomWidgetLearn({Key? key}) : super(key: key);
-  final String title = "Food";
+  final String title = "Food List";
 
   @override
   Widget build(BuildContext context) {
